@@ -24,9 +24,25 @@ $( document ).ready(function() {
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({ target: '.navbar-fixed-top' })
 });
-
-
-
+ $(document).ready(function(e) {
+ $('#menu-topo').hide();
+   var menu = false;
+  $('.btn-collapse').click(function(event) {
+    event.preventDefault();
+    $('#menu-topo').toggle('');
+      if(menu == true){
+        menu = false;
+        $(".lista-collapse:nth-child(1)").removeClass('cont');
+        $(".lista-collapse:nth-child(2)").removeClass('hidden');
+        $(".lista-collapse:nth-child(3)").removeClass('conts');
+      }else {
+        menu = true;
+        $(".lista-collapse:nth-child(1)").addClass('cont');
+         $(".lista-collapse:nth-child(2)").addClass('hidden');
+        $(".lista-collapse:nth-child(3)").addClass('conts');
+      }
+  });
+ });
 
 
 var  typed = new Typed ('.white-text', {

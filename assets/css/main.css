@@ -1,6 +1,6 @@
 * {
 	padding:0;
-	margin:0;
+	margin:0 auto;
 }
 
 /* ---- particles.js container ---- */
@@ -12,31 +12,71 @@
 	background-color: #4a4e69;
 
 }
-.navbar-inverse{
-	background-color: #4a4e69;
-	text-decoration: none;
-	width: 100%;
-	padding: 2px;
 
+
+#topo {
+ z-index: 15;
+    background-color: #4a4e69;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid #5f5f5;
+    opacity: 0.9;
 }
-p {
+#menu-topo{
+  border-top: 1px solid #1C79AD;
+  text-align: center;
+  padding: 0;
+}#menu-topo li{
+  width: 100%;
+  list-style: none;
+}#menu-topo li:hover{
+}#menu-topo li a{
+  display: block !important;
+  width: 100%;
+  font-size: 1.5em;
+  padding:1% 0;
+  font-weight: bold;
   color:#f2e9e5;
-	margin: 4px;
-	padding: 2px;
-}
-p:hover:{
-	color: #c9ada7;
-}
-.navbar-brand  {
-color:#f2e9e5;
-text-decoration:none;
-}
+}#menu-topo li a:hover{
+  background-color:#D6D6DC;
+  text-decoration: none;
+}.btn-collapse {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  padding:0.5% 1%;
+  float: right;
+  margin: 3.0%;
+}.lista-collapse {
+  width: 100%;
+  height: 5px;
+  background-color: #f2e9e5;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+}.lista-collapse:nth-child(1){top:0;}
+.lista-collapse:nth-child(2){top:14px;}
+.lista-collapse:nth-child(1){top:25px;}
 
-a {
-	text-decoration: none;
+.cont {
+    -ms-transform: rotate(-50deg)
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+}.conts {
+    -ms-transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    transform: rotate(50deg);
+}.hidden {
+  visibility: hidden;
+}.lista-collapse.cont {
+top: 5px;
+}.lista-collapse.conts {
+top: 5px;
 }
-/*highlight all links to current page*/
-
 
 /*NAVBAR ENDS*/
 
@@ -45,7 +85,7 @@ a {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
-    background: url("./../img/present3.jpg") no-repeat center center fixed;
+    background: url("./../img/fondo.jpeg") no-repeat center center fixed;
     background-size: cover;
     height: 855px;
     color: #f2e9e5;
@@ -53,9 +93,7 @@ a {
 }
 hr{
   border-color: #f2e9e5;
-}
-body{
-  font-family: Typewolf;
+
 }
 h1{
   font-size: 4.2em;
@@ -64,35 +102,19 @@ h3{
   font-size: 35px;
 }
 
-.btn-default {
-  font-family: Typewolf;
-  background-color: #778899;
-  color: white;
-  border-color: #778899;
-  font-size: 1.7em;
-}
 
 .intro-message{
     position: relative;
     padding-top: 15%;
     padding-bottom: 20%;
 }
-/*Za social buttone postavljanje u block*/
-@media(max-width:767px) {
-   ul.social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-  /*Whole body to this font*/
-  body{
-    font-size: 1.1em;
-  }
+
+
  .navbar-fixed-top{
     margin: 0px;
     position: static;
   }
-}
+
 
 /*end of Page home*/
 /*STARTS ABOUT PAGE*/
@@ -100,9 +122,35 @@ h3{
   padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
  padding-bottom: 50px;
  text-align: center;
- background: url("../img/portafolio.jpg") no-repeat center center fixed;
+ background-color: #4a4e69;
  background-size: cover;
 height: 855px;
+ color: white; 
+}
+
+.pagePortfolio {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    background: url("./../img/portafolio.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    height: 1450px;
+    color: #f2e9e5;
+
+}
+.card {
+margin:30px;
+}
+
+
+
+.skills{
+  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+ padding-bottom: 50px;
+ text-align: center;
+ background-color: #4a4e69;
+ background-size: cover;
+ height: 800px;
  color: white;
     
 }
@@ -119,57 +167,23 @@ height: 855px;
 .picture{
   padding-top: 3%;
 }
-/*ABOUT SREDITI RESPONZIVNO*/
-@media(max-width:768px) {
- .text-and-picture {
-        position: relative;
-        display: block;
-        padding-top: 0%;
-        color: 	#f2e9e5;
-    }
-  .picture{
-     margin: auto;
-     width: 400px;
-     height: 200px;
-  }
-}
 
-.shrink-img {
-  height: 300px;
-  width: 500px;
-}
-
-.shrink-img:hover {
-  height: 350px;
-  width: 550px;  
-}
 
 /*START PAGE PORTFOLIO*/
-.pagePortfolio{
-text-align: center;
-background: url("https://images.unsplash.com/photo-1416339306562-f3d12fefd36f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=de2ab37fd88bf484feb4e5a2788b2071") no-repeat center center fixed;
-background-size: cover;
-height: 100%;
-color: #f2e9e5;
-
-  
-}
-.card {
-	margin: 2em;
-
-}
-
 
 /*Contacto*/
 .pageContactMe{
-  padding-top: 141px; 
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    background: url("./../img/skills1.jpg") no-repeat center center fixed;
     background-size: cover;
-    color: #4a4e69;
-    height: 625px;
+    height: 450px;
+    color: #f2e9e5;
  }
 
 .contact-message{
- color: #4a4e69;
+ color: white;
 }
 #submit{
   color: white;
@@ -183,32 +197,45 @@ color: #f2e9e5;
 }
 
 /*Footer*/
-.copyright{
-      margin: 15px 0 0;
+
 }
 .fa-js-square,.fa-html5, .fa-css3, .fa-react, .fa-code-branch, .fa-node-js {
-	font-size: 3em;
+	font-size: 5em;
 	text-align: center;
-	color: black;
 	margin:1em;
 	position: relative;
 }
+.icon {
+  font-size: 100px;
+}
 .fa-js-square:hover,.fa-html5:hover, .fa-css3:hover, .fa-react:hover, .fa-code-branch:hover, .fa-node-js:hover  {
-	font-size: 3em;
-	text-align: center;
-	color:#f2e9e5 ;
-	margin:1em;
-	position: relative;
+color: yellow;
+font-size: 4em;
 }
 
  .fa-github,.fa-linkedin, .fa-envelope, .fa-download {
 	position: relative;
 	font-size: 3em;
 	text-align: center;
-	color: black;
+	color: white;
 	margin:1em;
+}
+.fa-github:hover,.fa-linkedin:hover, .fa-envelope:hover, .fa-download:hover {
+color: yellow;
 }
 img {
 	height:200px;
 	width: 200px;
+}
+@media(max-width:767px) {
+   ul.social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+ .navbar-fixed-top{
+    margin: 0px;
+    position: static;
+  }
 }
