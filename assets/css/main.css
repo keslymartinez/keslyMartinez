@@ -176,10 +176,10 @@ margin-top:28px;
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
-    background: url("./../img/skills1.jpg") no-repeat center center fixed;
+    background: url("./../img/fondofin2.jpeg") no-repeat center center fixed;
     background-size: cover;
     height: 450px;
-    color: #f2e9e5;
+    color: #4a4e69;
  }
 h4 {
   font-size: 23px;
