@@ -139,7 +139,7 @@ height: 855px;
 
 }
 .card {
-margin:30px;
+margin-top:28px;
 }
 
 
@@ -181,7 +181,9 @@ margin:30px;
     height: 450px;
     color: #f2e9e5;
  }
-
+h4 {
+  font-size: 23px;
+}
 .contact-message{
  color: white;
 }
