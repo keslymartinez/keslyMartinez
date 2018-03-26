@@ -129,17 +129,20 @@ height: 855px;
 }
 
 .pagePortfolio {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
-    text-align: center;
-    background: url("./../img/portafolio.jpeg") no-repeat center center fixed;
-    background-size: cover;
-    height: 1450px;
-    color: #f2e9e5;
+  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 50px;
+  text-align: center;
+  background: url("./../img/portafolio.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  height: 1450px;
+  color: #4a4e69;
 
 }
 .card {
 margin-top:28px;
+}
+.card:hover {
+  color: yellow;
 }
 
 
@@ -182,7 +185,7 @@ margin-top:28px;
     color: #4a4e69;
  }
 h4 {
-  font-size: 23px;
+  font-size: 22px;
 }
 .contact-message{
  color: white;
@@ -212,7 +215,7 @@ h4 {
 }
 .fa-js-square:hover,.fa-html5:hover, .fa-css3:hover, .fa-react:hover, .fa-code-branch:hover, .fa-node-js:hover  {
 color: yellow;
-font-size: 4em;
+
 }
 
  .fa-github,.fa-linkedin, .fa-envelope, .fa-download {
